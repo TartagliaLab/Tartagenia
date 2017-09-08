@@ -31,7 +31,7 @@ fi
 
 # estraggo la lista dei geni nel vcf
 /pico/work/IscrC_FoRWArDS_1/NGS_tools/vcf2genelist.py $outdir$ID"_raw_snps-indels_HapCall_genotype_filtered.g.SnpEff_UCSCAnnot_dbNSFP3.dbNSFP3_gene_cadd"$spid"_ACMG_DDG2P_Mendel_intervar_db_filtered.vcf" 2>> $outdir$ID"_ranking_log"
-
+ 
 # ordino e elimino duplicati
 sort -u $outdir$ID"_raw_snps-indels_HapCall_genotype_filtered.g.SnpEff_UCSCAnnot_dbNSFP3.dbNSFP3_gene_cadd"$spid"_ACMG_DDG2P_Mendel_intervar_db_filtered.genelist.txt" > $outdir$ID"_raw_snps-indels_HapCall_genotype_filtered_genelist_sorted.txt"
 rm $outdir$ID"_raw_snps-indels_HapCall_genotype_filtered.g.SnpEff_UCSCAnnot_dbNSFP3.dbNSFP3_gene_cadd"$spid"_ACMG_DDG2P_Mendel_intervar_db_filtered.genelist.txt"
